@@ -1,0 +1,196 @@
+/* Universal CSS */
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin: 0;
+  padding: 0 auto;
+  background-color: black;
+}
+/*Customization of scrollbar*/
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 70px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(199, 3, 3);
+  border-radius: 30px;
+}
+ 
+body::-webkit-scrollbar-thumb:hover {
+  background-color: white;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  letter-spacing: 3px;
+  border-bottom: 2px solid rgb(158, 1, 1);
+}
+/* My name in the header */ 
+header h1 {
+  margin-right: 800px;
+  color: white;
+  font-size: 40px;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  animation: moving-shadow 4s linear ease-out;
+}
+/* About, Works, and Contact */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  margin: 100px 10px 10px 150px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+header a:hover {
+  background-color: rgb(199, 3, 3);
+  color: white;
+}
+
+.active {
+  color: white;
+}
+/* Fire Emoji */
+header img {
+  max-width: 50px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  align-self: end;
+}
+
+main {
+  padding: 0px;
+  background-color: black
+}
+
+#background-img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  padding-bottom: 100px;
+}
+/* My about me text */
+.bio-container {
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px 15px rgb(119, 2, 2);
+  animation: moving-shadow 3s linear infinite;
+  width: fit-content;
+  margin-left: 300px; margin-top: -250px;
+  
+}
+/* Allows my containers to have a pulsing animation */ 
+@keyframes moving-shadow {
+  from {
+    box-shadow: 0px 0px 1px 1px rgb(253, 5, 87);
+  }
+  
+  to {
+    box-shadow: 0px 0px 50px 20px rgb(199, 3, 3);
+  }
+}
+/* About me, My Work, Contact Me sub-titles */
+.sub-title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 300px;
+  font-size: 30px;
+}
+
+#works {
+  display: flex;
+}
+/* For my HTML, CSS, Javascript my work containers */
+#works-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 300px;
+  padding: 20px;
+  margin-top: -50px;margin-left: -30px;
+}
+
+.works-box {
+  padding: 20px;
+  width: 400px;
+  height: 500px;
+  margin: 100px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 50px 15px rgb(119, 2, 2);
+  animation: moving-shadow 3s linear infinite;
+  opacity: 50%;
+}
+
+.works-box:hover {
+  background-color: rgb(199, 3, 3);
+  color: white;
+  opacity: 100%;
+}
+/* My placeholder images for my work containers */
+section img {
+  display: flex;
+  margin-top: 60px;
+  width: 400px;
+  height: 500px;
+}
+
+.works-text {
+  text-align: center;
+  margin-top: -100px;
+  background-color: rgb(199, 3, 3);
+  font-size: 30px;
+}
+/* My Contact Me links */
+section ul {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  margin-top: -250px;
+  margin-left: -5px;
+  padding: 0 0 200px 10px;
+}
+
+section li {
+  display: flex;
+  padding: 0 50px;
+  border-bottom: 2px solid rgb(158, 1, 1);
+}
+
+footer {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 992px) {
+  header {
+    float: initial;
+  }
+  body {
+    float: initial;
+  }
+}
+@media only screen and (max-device-width: 576px) {
+  .bio-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
