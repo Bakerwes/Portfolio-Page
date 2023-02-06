@@ -6,7 +6,7 @@ My Portfolio Page
 
 ***
 
-The challenge for this week was to build a portfolio page from scratch using HTML and CSS. There was no acceptance criteria for styling wihtin CSS. However, there was an acceptence criteria regarding the functionality of the portfolio page.
+The challenge for this week was to build a portfolio page from scratch using HTML and CSS. There was no acceptance criteria for styling within CSS. However, there was an acceptence criteria regarding the functionality of the portfolio page.
 
 ***
 
